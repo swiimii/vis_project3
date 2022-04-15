@@ -75,8 +75,8 @@ class Wordmap {
 		    .slice(0, 250)
 		    .map(([text, value]) => ({text, value }));
 		console.log(vis.wordData);
-
-		vis.colors.domain(vis.wordData.value);
+		console.log(d3.extent(vis.wordData.value));
+		//vis.colors.domain(d3.extent(vis.wordData.value));
 		vis.w_cloud = d3.layout.cloud()
 		    .size([vis.width, vis.height])
 		    .words(vis.wordData.map((d) => Object.create(d)))
