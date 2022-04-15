@@ -56,6 +56,16 @@ class Wordmap {
 
 		console.log(vis.text);
 
+		vis.text = vis.text
+    		.trim()
+    		.split(/[\s.]+/g)
+		    .map((w) => w.replace(/^[“‘"\-—()[\]{}]+/g, ""))
+		    .map((w) => w.replace(/[;:.!?()[\]{},"'’”\-—]+$/g, ""))
+		    .map((w) => w.replace(/['’]s$/g, ""))
+		    .map((w) => w.substring(0, 30))
+		    .map((w) => w.toLowerCase())
+		    .filter((w) => w && !vis.stopwords.has(w));
+		console.log(vis.text)
 
 	}
 }
