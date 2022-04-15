@@ -46,6 +46,9 @@ class Wordmap {
 
 		vis.data = d3.group(data, d => d.speaker);
 		console.log(vis.data);
+		vis.characterData = vis.data.get(character);
+		console.log(vis.characterData);
+		console.log(vis.data);
 
 	}
 }
