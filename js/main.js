@@ -18,8 +18,8 @@ d3.csv('data/transcript_data.csv')
 
     wordmap = new Wordmap({
           'parentElement': '#wordmap',
-          'containerHeight': 250,
-          'containerWidth': 1600
+          'containerHeight': 500,
+          'containerWidth': 700
         }, data);
       
   })
