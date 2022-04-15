@@ -24,6 +24,9 @@ class Wordmap {
 		vis.padding = 2;
 		vis.rotate = () => 0;
 
+		vis.colors = d3.scaleOrdinal()
+			.range(["#8dd3c7","#bebada","#fb8072","#80b1d3","#fdb462","#b3de69","#fccde5","#d9d9d9","#bc80bd","#ccebc5","#ffed6f"]);
+
 		vis.width = vis.config.containerWidth - vis.config.margin.left - vis.config.margin.right;
 	  	vis.height = vis.config.containerHeight - vis.config.margin.top - vis.config.margin.bottom;
 
@@ -73,6 +76,7 @@ class Wordmap {
 		    .map(([text, value]) => ({text, value }));
 		console.log(vis.wordData);
 
+		vis.colors.domain(vis.wordData.value);
 		vis.w_cloud = d3.layout.cloud()
 		    .size([vis.width, vis.height])
 		    .words(vis.wordData.map((d) => Object.create(d)))
