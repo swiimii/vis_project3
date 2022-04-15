@@ -73,7 +73,7 @@ class Wordmap {
 		    .map(([text, value]) => ({text, value }));
 		console.log(vis.wordData);
 
-		vis.w_cloud = cloud()
+		vis.w_cloud = d3.layout.cloud()
 		    .size([vis.width, vis.height])
 		    .words(vis.wordData.map((d) => Object.create(d)))
 		    .padding(vis.padding)
