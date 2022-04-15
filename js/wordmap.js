@@ -29,7 +29,7 @@ class Wordmap {
 
 	  	vis.svg = d3.select(vis.config.parentElement)
 	  		.attr('width', vis.config.containerWidth)
-	  		.attr('height', vis.config.containerHeight);
+	  		.attr('height', vis.config.containerHeight)
 	  		.attr("font-family", vis.fontFamily)
     		.attr("text-anchor", "middle");
 
