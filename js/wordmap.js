@@ -20,7 +20,7 @@ class Wordmap {
 		);
 
 		vis.fontFamily = "sans-serif";
-		vis.fontScale = 15;
+		vis.fontScale = 10;
 		vis.padding = 0;
 		vis.rotate = () => 0;
 
