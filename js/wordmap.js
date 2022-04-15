@@ -48,7 +48,6 @@ class Wordmap {
 		console.log(vis.data);
 		vis.characterData = vis.data.get(character);
 		console.log(vis.characterData);
-		console.log(vis.data);
 
 	}
 }
