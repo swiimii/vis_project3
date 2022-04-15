@@ -29,12 +29,14 @@ class Wordmap {
 
 	  	vis.svg = d3.select(vis.config.parentElement)
 	  		.attr('width', vis.config.containerWidth)
-	  		.attr('height', vis.config.containerHeight)
-	  		.attr("font-family", vis.fontFamily)
-    		.attr("text-anchor", "middle");
-
+	  		.attr('height', vis.config.containerHeight);
+	  		
 	  	//This might need to be moved to updateVis
 	  	vis.chart = vis.svg.append('g')
+	  		.attr('width', vis.width)
+	  		.attr('height', vis.height)
+	  		.attr("font-family", vis.fontFamily) // might need to move to vis.chart
+    		.attr("text-anchor", "middle")
 	  		.attr('transform', `translate(${vis.config.margin.left},${vis.config.margin.top})`);
 
 	  	vis.updateVis();
