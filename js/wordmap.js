@@ -87,5 +87,6 @@ class Wordmap {
 		        .attr("transform", `translate(${x},${y}) rotate(${rotate})`)
 		        .text(text);
 		    });
+		vis.w_cloud.start();
 	}
 }
