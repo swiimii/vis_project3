@@ -73,5 +73,19 @@ class Wordmap {
 		    .map(([text, value]) => ({text, value }));
 		console.log(vis.wordData);
 
+		vis.w_cloud = cloud()
+		    .size([vis.width, vis.height])
+		    .words(vis.wordData.map((d) => Object.create(d)))
+		    .padding(vis.padding)
+		    .rotate(vis.rotate)
+		    .font(vis.fontFamily)
+		    .fontSize((d) => Math.sqrt(d.value) * vis.fontScale)
+		    .on("word", ({ size, x, y, rotate, text }) => {
+		      svg
+		        .append("text")
+		        .attr("font-size", size)
+		        .attr("transform", `translate(${x},${y}) rotate(${rotate})`)
+		        .text(text);
+		    });
 	}
 }
