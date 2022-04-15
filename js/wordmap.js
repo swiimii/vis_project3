@@ -81,7 +81,7 @@ class Wordmap {
 		    .font(vis.fontFamily)
 		    .fontSize((d) => Math.sqrt(d.value) * vis.fontScale)
 		    .on("word", ({ size, x, y, rotate, text }) => {
-		      svg
+		      vis.chart
 		        .append("text")
 		        .attr("font-size", size)
 		        .attr("transform", `translate(${x},${y}) rotate(${rotate})`)
