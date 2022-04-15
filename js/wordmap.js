@@ -4,7 +4,7 @@ class Wordmap {
 	      parentElement: _config.parentElement,
 	      containerWidth: _config.containerWidth || 500,
 	      containerHeight: _config.containerHeight || 140,
-	      margin: { top: 15, bottom: 50, right: 10, left: 50 }
+	      margin: { top: 10, bottom: 10, right: 10, left: 10 }
 	    }
 
 	    this.data = _data;
