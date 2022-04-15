@@ -70,7 +70,7 @@ class Wordmap {
 		vis.wordData = d3.rollups(vis.text, (group) => group.length, (w) => w)
 		    .sort(([, a], [, b]) => d3.descending(a, b))
 		    .slice(0, 250)
-		    .map(([text, value]) => ({vis.text, value }));
+		    .map(([text, value]) => ({text, value }));
 		console.log(vis.wordData);
 
 	}
