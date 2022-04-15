@@ -49,5 +49,13 @@ class Wordmap {
 		vis.characterData = vis.data.get(character);
 		console.log(vis.characterData);
 
+		vis.text = '';
+		vis.characterData.forEach(d=> {
+			vis.text += d.line + ' ';
+		});
+
+		console.log(vis.text);
+
+
 	}
 }
