@@ -8,6 +8,11 @@ d3.csv('data/transcript_data.csv')
 
         console.log(data);//ok, got my data!
         
+        wordmap = new Wordmap({
+          'parentElement': '#wordmap',
+          'containerHeight': 250,
+          'containerWidth': 1600
+        }, data);
         
     })
     .catch(error => console.error(error));
