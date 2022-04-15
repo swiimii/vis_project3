@@ -35,15 +35,17 @@ class Wordmap {
 	  	vis.chart = vis.svg.append('g')
 	  		.attr('width', vis.width)
 	  		.attr('height', vis.height)
-	  		.attr("font-family", vis.fontFamily) // might need to move to vis.chart
+	  		.attr("font-family", vis.fontFamily) // might need to be moved to vis.svg but I think it is okay here
     		.attr("text-anchor", "middle")
 	  		.attr('transform', `translate(${vis.config.margin.left},${vis.config.margin.top})`);
 
-	  	vis.updateVis();
+	  	vis.updateVis("candace", vis.data); 
 	}
-	updateVis() {
+	updateVis(character, data) {
 		let vis = this;
 
+		vis.data = d3.group(data, d => d.speaker);
+		console.log(vis.data);
 
 	}
 }
