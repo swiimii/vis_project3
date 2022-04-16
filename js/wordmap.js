@@ -24,8 +24,9 @@ class Wordmap {
 		vis.padding = 2;
 		vis.rotate = () => 0;
 
-		// vis.colors = d3.scaleOrdinal()
-		// 	.range(["#8dd3c7","#bebada","#fb8072","#80b1d3","#fdb462","#b3de69","#fccde5","#d9d9d9","#bc80bd","#ccebc5","#ffed6f"]);
+		vis.colors = d3.scaleThreshold()
+			.domain([1, 5, 10, 25, 50, 100, 150, 200, 300, 500])
+		 	.range(["#8dd3c7","#bebada","#fb8072","#80b1d3","#fdb462","#b3de69","#fccde5","#d9d9d9","#bc80bd","#ccebc5","#ffed6f"]);
 
 		vis.width = vis.config.containerWidth - vis.config.margin.left - vis.config.margin.right;
 	  	vis.height = vis.config.containerHeight - vis.config.margin.top - vis.config.margin.bottom;
@@ -42,9 +43,9 @@ class Wordmap {
     		.attr("text-anchor", "middle")
 	  		.attr('transform', `translate(${vis.config.margin.left},${vis.config.margin.top})`);
 
-	  	vis.updateVis("candace", vis.data); 
+	  	vis.renderVis("candace", vis.data); 
 	}
-	updateVis(character, data) {
+	renderVis(character, data) {
 		let vis = this;
 
 		vis.data = d3.group(data, d => d.speaker);
@@ -75,8 +76,11 @@ class Wordmap {
 		    .slice(0, 250)
 		    .map(([text, value]) => ({text, value }));
 		console.log(vis.wordData);
-		console.log(d3.extent(vis.wordData.value));
-		//vis.colors.domain(d3.extent(vis.wordData.value));
+
+		vis.fontScale = 70 / Math.sqrt(vis.wordData[0].value);
+		console.log(vis.fontScale);
+
+	
 		vis.w_cloud = d3.layout.cloud()
 		    .size([vis.width, vis.height])
 		    .words(vis.wordData.map((d) => Object.create(d)))
@@ -89,8 +93,16 @@ class Wordmap {
 		        .append("text")
 		        .attr("font-size", size)
 		        .attr("transform", `translate(${x},${y}) rotate(${rotate})`)
+		        .style("fill", function(d) { return vis.colors(Math.pow(size/vis.fontScale,2)); })
 		        .text(text);
 		    });
 		vis.w_cloud.start();
+	}
+	updateVis(character, data) {
+		let vis = this;
+
+		vis.w_cloud.stop();
+		vis.chart.selectAll('text').remove();
+		vis.renderVis(character, data);
 	}
 }
