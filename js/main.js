@@ -25,7 +25,13 @@ d3.csv('data/transcript_data.csv')
           'containerHeight': 500,
           'containerWidth': 700
         }, data);
-      
+    
+    const timeline = new Timeline({
+      parentElement: 'timeline',
+      title: 'Lines Per Episode',
+      yLabel: 'Number of Lines (rows of data)',
+      containerWidth: 1200,
+    }, data, "speaker", 300);
   })
   .catch(error => console.error(error));
     
