@@ -57,6 +57,8 @@ class Wordmap {
 			vis.text += d.line + ' ';
 		});
 
+		console.log(vis.filtered_data);
+
 		console.log(vis.text);
 
 		vis.text = vis.text
@@ -90,12 +92,29 @@ class Wordmap {
 		    .on("word", ({ size, x, y, rotate, text }) => {
 		      vis.chart
 		        .append("text")
+		        .attr("class", "words")
 		        .attr("font-size", size)
 		        .attr("transform", `translate(${x},${y}) rotate(${rotate})`)
 		        .style("fill", function(d) { return vis.colors(Math.pow(size/vis.fontScale,2)); })
-		        .text(text);
+		        .text(text)
+		        .on("click", handleClick);
+
+		        function handleClick(d, i) {
+		          var e = d3.select(this);
+		          let selectedWord = `${e.text()}`;
+		          let newData = null;
+		          newData = vis.filtered_data.filter((element) => element.line.indexOf(selectedWord) !=-1? true: false);
+		          console.log(selectedWord);
+		          UpdateAllCharts(newData);
+		        }
 		    });
 		vis.w_cloud.start();
+
+		// vis.chart.selectAll(".words")
+		// 	.on("click", (event,d) => {
+		// 		console.log(event);
+		// 		console.log(d);
+		// 	});
 	}
 	updateVis(data) {
 		let vis = this;
