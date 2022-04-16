@@ -57,10 +57,6 @@ class Wordmap {
 			vis.text += d.line + ' ';
 		});
 
-		console.log(vis.filtered_data);
-
-		console.log(vis.text);
-
 		vis.text = vis.text
     		.trim()
     		.split(/[\s.]+/g)
@@ -70,18 +66,14 @@ class Wordmap {
 		    .map((w) => w.substring(0, 30))
 		    .map((w) => w.toLowerCase())
 		    .filter((w) => w && !vis.stopwords.has(w));
-		console.log(vis.text)
 
 		vis.wordData = d3.rollups(vis.text, (group) => group.length, (w) => w)
 		    .sort(([, a], [, b]) => d3.descending(a, b))
 		    .slice(0, 250)
 		    .map(([text, value]) => ({text, value }));
-		console.log(vis.wordData);
 
 		vis.fontScale = 70 / Math.sqrt(vis.wordData[0].value);
-		console.log(vis.fontScale);
 
-	
 		vis.w_cloud = d3.layout.cloud()
 		    .size([vis.width, vis.height])
 		    .words(vis.wordData.map((d) => Object.create(d)))
@@ -109,12 +101,6 @@ class Wordmap {
 		        }
 		    });
 		vis.w_cloud.start();
-
-		// vis.chart.selectAll(".words")
-		// 	.on("click", (event,d) => {
-		// 		console.log(event);
-		// 		console.log(d);
-		// 	});
 	}
 	updateVis(data) {
 		let vis = this;
