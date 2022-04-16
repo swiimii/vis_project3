@@ -1,4 +1,5 @@
-let filteredData;
+let seasonData;
+let episodeData;
 let allData;
 
 d3.csv('data/transcript_data.csv')
@@ -59,27 +60,28 @@ function UpdateEpisodeList(episodes) {
 d3.select("#selectSeason").on("change", function(d) {
     var selectedSeason= d3.select(this).property("value");
     if (selectedSeason == "all") {
-      filteredData = allData;
+      seasonData = allData;
       UpdateEpisodeList(null);
     }
     else {
-      filteredData = d3.group(allData, d => d.season);
-      filteredData = filteredData.get(selectedSeason);
-      console.log(filteredData);
-      UpdateEpisodeList(Array.from(d3.group(filteredData, d => d.episode).keys()));
+      seasonData = d3.group(allData, d => d.season);
+      seasonData = seasonData.get(selectedSeason);
+      console.log(seasonData);
+      UpdateEpisodeList(Array.from(d3.group(seasonData, d => d.episode).keys()));
     }
     
-    UpdateAllCharts(filteredData);
+    UpdateAllCharts(seasonData);
   })
 
 d3.select("#selectEpisode").on("change", function(d) {
     var selectedEpisode= d3.select(this).property("value");
     if (selectedEpisode == "All Episodes") {
-      UpdateAllCharts(filteredData);
+      UpdateAllCharts(seasonData);
     }
     else {
       const episode_num = Number(selectedEpisode.replace(/\D/g, ''));
-      UpdateAllCharts(d3.group(filteredData, d => d.episode).get(episode_num));
+      episodeData = d3.group(seasonData, d => d.episode).get(episode_num);
+      UpdateAllCharts(episodeData);
     }
     
   })
