@@ -35,7 +35,7 @@ function UpdateAllCharts(data = null) {
     data = allData
   }
   UpdateBarCharts(data);
-  wordmap.updateVis("candace", data);
+  wordmap.updateVis(data);
 
 }
 

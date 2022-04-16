@@ -43,18 +43,15 @@ class Wordmap {
     		.attr("text-anchor", "middle")
 	  		.attr('transform', `translate(${vis.config.margin.left},${vis.config.margin.top})`);
 
-	  	vis.renderVis("candace", vis.data); 
+	  	vis.renderVis(vis.data); 
 	}
-	renderVis(character, data) {
+	renderVis(data = null) {
 		let vis = this;
+		if (data == null) {
+			data = vis.data;
+		}
 
-		vis.data = d3.group(data, d => d.speaker);
-		console.log(vis.data);
-		vis.characterData = vis.data.get(character);
-		console.log(vis.characterData);
-
-		vis.text = '';
-		vis.characterData.forEach(d=> {
+		data.forEach(d=> {
 			vis.text += d.line + ' ';
 		});
 
@@ -98,11 +95,11 @@ class Wordmap {
 		    });
 		vis.w_cloud.start();
 	}
-	updateVis(character, data) {
+	updateVis(data) {
 		let vis = this;
 
 		vis.w_cloud.stop();
 		vis.chart.selectAll('text').remove();
-		vis.renderVis(character, data);
+		vis.renderVis(data);
 	}
 }
