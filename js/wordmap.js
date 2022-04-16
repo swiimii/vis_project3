@@ -8,7 +8,7 @@ class Wordmap {
 	    }
 
 	    this.data = _data;
-
+		this.filtered_data = this.data;
 	    // Call a class function
 	    this.initVis();
 	}
@@ -48,10 +48,12 @@ class Wordmap {
 	renderVis(data = null) {
 		let vis = this;
 		if (data == null) {
-			data = vis.data;
+			vis.filtered_data = vis.data;
+		} else {
+			vis.filtered_data = data; //via input to function	
 		}
 
-		data.forEach(d=> {
+		vis.filtered_data.forEach(d=> {
 			vis.text += d.line + ' ';
 		});
 
