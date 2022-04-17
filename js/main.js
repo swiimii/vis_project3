@@ -32,6 +32,14 @@ d3.csv('data/transcript_data.csv')
       yLabel: 'Number of Lines (rows of data)',
       containerWidth: 1200,
     }, data, "speaker", 300);
+
+    linechart = new MultiLine({
+      'parentElement': '#line',
+      'containerHeight': 200,
+      'containerWidth': 950
+    }, data);
+
+    get_episode_dist(data);
   })
   .catch(error => console.error(error));
     
@@ -92,3 +100,34 @@ d3.select("#selectEpisode").on("change", function(d) {
     
   })
 
+function get_episode_dist(data) {
+  episode_lengths = d3.rollup(data, v => v.length, d => d.season, d => d.episode);
+  console.log(episode_lengths);
+
+  data.forEach(d=> 
+    d.line_count = Math.round(d.line_count/episode_lengths.get(d.season).get(d.episode) * 100)
+  );
+  console.log(data);
+  let main_chars = ["phineas", "candace", "doofenshmirtz"];
+  data = data.filter(d => main_chars.includes(d.speaker));
+  console.log(data);
+
+  episode_dists_by_char = d3.rollup(data, v => v.length, d => d.speaker, d => d.line_count);
+  console.log(episode_dists_by_char);
+  
+
+  // console.log(episode_dists_by_char.get(main_chars[0]).keys());
+  let arr = [];
+  main_chars.forEach(d=> 
+    Array.from(episode_dists_by_char.get(d).keys()).forEach(p => 
+      arr.push({speaker: d, perc: p, value: episode_dists_by_char.get(d).get(p)})
+    )
+  );
+  console.log(arr);
+  // data = d3.group(data, d => d.speaker);
+  // console.log(data);
+  // main_chars.forEach(d=> 
+
+  // );
+  return(arr);
+}
