@@ -39,7 +39,7 @@ d3.csv('data/transcript_data.csv')
       'containerWidth': 950
     }, data);
 
-    get_episode_dist(data);
+    //get_episode_dist(data);
   })
   .catch(error => console.error(error));
     
@@ -105,14 +105,16 @@ function get_episode_dist(data) {
   console.log(episode_lengths);
 
   data.forEach(d=> 
-    d.line_count = Math.round(d.line_count/episode_lengths.get(d.season).get(d.episode) * 100)
+    d.line_perc = Math.round(d.line_count/episode_lengths.get(d.season).get(d.episode)*100)
   );
   console.log(data);
   let main_chars = ["phineas", "candace", "doofenshmirtz"];
   data = data.filter(d => main_chars.includes(d.speaker));
   console.log(data);
 
-  episode_dists_by_char = d3.rollup(data, v => v.length, d => d.speaker, d => d.line_count);
+  //console.log(d3.max(...data.map(item => item.line_count)));
+
+  episode_dists_by_char = d3.rollup(data, v => v.length, d => d.speaker, d => d.line_perc);
   console.log(episode_dists_by_char);
   
 
