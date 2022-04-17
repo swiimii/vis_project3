@@ -1021,6 +1021,7 @@ phineas,we're just about to make a nice handmade ice cream sundae for isabella.,
 linda,oh that is so sweet! come on in the kitchen. i'll help you with it.,season_1,15,35,156
 vanessa,come on mom! hurry!,season_1,15,37,159
 charlene,hmm...um that's not evil dear.,season_1,15,39,163
+charlene,bit much perhaps. heinz what is all this? i thought you were lactose intolerant.,season_1,15,40,165
 doofenshmirtz,i am!!,season_1,15,40,166
 charlene,and what's over there? that is no way to treat your pet!,season_1,15,40,167
 vanessa,but mom that's a secret agent!,season_1,15,40,168
@@ -1772,6 +1773,8 @@ phineas,oh there you are perry.,season_1,26,5,17
 candace,and ferb says...,season_1,26,5,18
 ferb,you know gladiators were roman not greek.,season_1,26,5,19
 candace,it's always the same thing every day.,season_1,26,5,20
+candace,the same insane routine.,season_1,26,6,22
+candace,my life is like a bad sitcom.,season_1,26,8,25
 candace,yes yes!,season_1,26,8,27
 candace,hello bust 'em? do i have a show for you.,season_1,26,10,37
 phineas,bright sunny and clear. yep it's gonna be a hot one. ferb i know what we're gonna do today.,season_1,26,11,39
@@ -2853,6 +2856,7 @@ doofenshmirtz,oh just come in! into my trap! yes! sticky flypaper perry the plat
 baljeet,come see the flying fishmonger jump mcgregor's gorge! tell your friends!,season_1,38,17,69
 buford,do you know how dumb you look?,season_1,38,17,70
 baljeet,i thought it would be a good way to get more attention.,season_1,38,17,71
+girl,i love your outfit. it's so cute.,season_1,38,17,72
 baljeet,gorge!,season_1,38,17,73
 buford,gorge jump!,season_1,38,17,74
 baljeet,fishmongers fly again!,season_1,38,17,75
@@ -5190,6 +5194,7 @@ candace,could it be true?!,season_2,13,47,165
 linda,candace have you seen this?,season_2,13,48,167
 candace,i'm looking at it! ...wait where are you?,season_2,13,48,168
 linda,in the kitchen!!,season_2,13,48,169
+linda,when i said throw these in the kitchen i didn't mean it literally!!!,season_2,13,49,171
 candace,yeah yeah yeah. come on mom! ,season_2,13,49,172
 linda,candace!!! i'm not going anywhere until you take care of this mess!!!,season_2,13,49,173
 phineas,well fun's fun but there are those pesky zoning laws.,season_2,13,51,176
@@ -9179,6 +9184,7 @@ stacy,it looks like they've done a pretty good job.,season_2,51,29,97
 candace,really stacy? really? ,season_2,51,29,98
 roger,heinz! wake up heinz we're on to the next hole already.,season_2,51,30,101
 doofenshmirtz,oh i hate golf! it's boring to watch and tedious to play. that's why i came prepared. you think this is a normal golf bag don't you? but when i twist this club here... ah there he is. let's give it a shot. fast forward!,season_2,51,31,103
+doofenshmirtz,hee hee hee! oh yeah! yeah look at him go! hee hee hee hee hee!,season_2,51,33,106
 candace,welcome everyone to the big bust! today you shall bear witness as i bust my brothers!,season_2,51,34,108
 candace,oh yeah!,season_2,51,34,110
 phineas,well guys we did it. a one hundred percent historically accurate old-timey pioneer town.,season_2,51,35,112
@@ -11610,6 +11616,7 @@ phineas,wait a minute! i just remembered some!,season_3,5,91,281
 phineas,nothing says mother's love like a giant robotic platypus butt.,season_3,5,92,283
 candace,why am i wearing a turtle on my head?,season_3,5,92,284
 buford,i wanna float around! like men.,season_3,5,92,285
+candace,am i sweating milk?,season_3,5,92,286
 man,run for your lives! it's gnome-ageddon!,season_3,5,92,288
 isabella,stickiness is the most underrated of all the -nesses...,season_3,5,92,289
 buford,i knew i should've gotten the down payment on the elephants.,season_3,5,92,290
@@ -12903,48 +12910,73 @@ doofenshmirtz,huh it's a...it's a couch. that's a bit anti-climatic i guess it's
 phineas,uh...,season_3,18,67,238
 doofenshmirtz,okay i got it i got - uh maybe hey you want to give me a hand here?,season_3,18,67,239
 phineas,whoa awesome! check it out!,season_3,18,67,240
+major monogram,ahem.,season_3,18,67,241
 doofenshmirtz,oh uh hello. say aren't you...,season_3,18,67,242
 phineas,hey dr. d! look at this!,season_3,18,67,243
 doofenshmirtz,hold that thought! ,season_3,18,67,244
 phineas,you're famous here!,season_3,18,67,245
 doofenshmirtz,heinz doofenshmirtz your leader?,season_3,18,71,251
+major monogram,is this some kind of test? is that really you sir?,season_3,18,72,254
 doofenshmirtz,ha ha! holy boy! even the great francis monogram's my slave in this dimension!,season_3,18,72,255
+major monogram,i prefer the term indentured executive assistant.,season_3,18,72,256
 doofenshmirtz,well i want to meet this other dimension me where can i find him?,season_3,18,72,257
+major monogram,oh you're from another dimension? well then he'll probably want to see you he's into that freaky sorta stuff. have a seat and i'll let him know you're on your way up.,season_3,18,72,258
 doofenshmirtz,okay so i just gotta sit here and...,season_3,18,73,260
 doofenshmirtz,that was awesome! ,season_3,18,75,264
+doofenshmirtz,alright who's interrupting my...,season_3,18,75,265
 doofenshmirtz,yeah i'm you from another dimension.,season_3,18,76,268
+doofenshmirtz,well that would explain the handsomeness.,season_3,18,76,269
 doofenshmirtz,right back atcha big guy.,season_3,18,76,270
+doofenshmirtz,does that mean you and i are exactly alike?,season_3,18,76,271
 doofenshmirtz,i suppose so.,season_3,18,76,272
 doofenshmirtz,blech no that's gross!,season_3,18,77,275
+doofenshmirtz,me too!,season_3,18,77,278
 doofenshmirtz,but not the vending machine thing. that's gonna happen.,season_3,18,77,284
+doofenshmirtz,it's in this pouch,season_3,18,77,292
 doofenshmirtz,ouch!,season_3,18,77,293
 doofenshmirtz,you know i can't help but notice that your scar goes over your eyepatch.,season_3,18,77,294
+doofenshmirtz,yeah...,season_3,18,77,295
 doofenshmirtz,...nothing...,season_3,18,77,296
 doofenshmirtz,no no i meant lorenzo,season_3,18,77,299
+doofenshmirtz,oh that's right,season_3,18,77,300
+doofenshmirtz,what's that are we doing a tv show together?,season_3,18,77,315
 doofenshmirtz,oh no. it just sort of sounded like that. well i mean we could. we should!,season_3,18,77,316
+doofenshmirtz,hmm maybe we're not so much alike,season_3,18,77,317
 doofenshmirtz,that can be your catchphrase! you're the grumpy one. eh?,season_3,18,77,318
 phineas,wow he's done really well for himself what do you think perry?,season_3,18,79,321
+doofenshmirtz,so what you're telling me is you're still not ruler of your tri-state area?,season_3,18,82,326
 doofenshmirtz,yeah? well obviously you did not have to deal with my nemesis perry the platypus!,season_3,18,82,327
 doofenshmirtz,what is it?,season_3,18,82,329
+doofenshmirtz,this is perry the platyborg! he was once my nemesis but now he is general of my army!,season_3,18,83,331
 doofenshmirtz,wow you are good!,season_3,18,83,332
+doofenshmirtz,dismissed.,season_3,18,83,333
 phineas,that was awesome!,season_3,18,84,335
+doofenshmirtz,ugh now who's interrupting me? remind me to berate my indentured executive assistant!,season_3,18,84,336
 doofenshmirtz,no no man it's cool. they're with me.,season_3,18,84,337
 phineas,hey dr. d we thought we lost you.,season_3,18,84,338
 doofenshmirtz,hey guys! whoops!,season_3,18,84,339
+doofenshmirtz,you dare to bring a secret agent in here?,season_3,18,84,340
 doofenshmirtz,this boy's a secret agent?,season_3,18,84,341
+doofenshmirtz,no no not him!,season_3,18,84,342
 doofenshmirtz,the quiet one?,season_3,18,84,343
+doofenshmirtz,no no him!,season_3,18,85,345
 doofenshmirtz,this plant?,season_3,18,85,346
+doofenshmirtz,the platypus! that's secret agent perry the platypus!,season_3,18,86,348
 phineas,whoa whoa hey he's just a platypus he doesn't do much.,season_3,18,86,349
 phineas,perry!,season_3,18,87,353
 doofenshmirtz,told ya!,season_3,18,88,356
 phineas,how are his vitals?,season_3,18,89,358
+doofenshmirtz,wait let me try something. platyborg do the same thing to those two boys.,season_3,18,89,359
 doofenshmirtz,what?,season_3,18,89,360
 phineas,what?,season_3,18,90,362
 phineas,perry?,season_3,18,91,365
+doofenshmirtz,ha! yes! i knew it!,season_3,18,91,366
 doofenshmirtz,wait wait a minute i'm confused why does their platypus fight so good?,season_3,18,91,367
 doofenshmirtz,what?,season_3,18,92,371
 phineas,perry?,season_3,18,93,373
+doofenshmirtz,get them!,season_3,18,93,374
 phineas,you're a secret agent?,season_3,18,94,376
+doofenshmirtz,hey be careful with that!,season_3,18,95,378
 phineas,so this is where you disappear to everyday? you come here and fight this guy?,season_3,18,96,380
 doofenshmirtz,no no he fights me he doesn't really know this guy.,season_3,18,96,381
 phineas,you fight a pharmacist? why would you even do that?!,season_3,18,96,382
@@ -12953,6 +12985,8 @@ phineas,you're evil? he's evil?! so not only have you been leading a double life
 ferb,well he did pee on the couch.,season_3,18,96,385
 doofenshmirtz,wait a second i just realized that was a conscious choice! you peed on my couch!,season_3,18,96,386
 phineas,no no that wasn't enough! that's when you should've put on your little hat not now after we've gone forward into this mess!,season_3,18,97,388
+doofenshmirtz,oh for badness sake you can hash all this out in prison. guards!,season_3,18,97,389
+doofenshmirtz,ahh! brain freeze!,season_3,18,98,391
 phineas,i-i'm sorry i'm just having trouble processing this right now. i don't want your pamphlet!,season_3,18,99,394
 phineas,uh oh. he's coming back around!,season_3,18,100,396
 phineas,oh you have got to be kidding me! for crying out loud!,season_3,18,101,398
@@ -12961,14 +12995,22 @@ doofenshmirtz,jinx you owe me a soda!,season_3,18,107,412
 driver,4th and main. ,season_3,18,108,415
 phineas,looks like they're gone. you're right ferb we have to concentrate on the task at hand we need to get back to our dimension and i don't even know where to start.,season_3,18,110,418
 phineas,wait a minute i just realized you could've been cleaning your own litter box this whole time! ,season_3,18,114,426
+doofenshmirtz,so tell me other-dimension me. what do you see here?,season_3,18,116,429
 doofenshmirtz,an ordinary platypus.,season_3,18,116,430
+doofenshmirtz,and now what do you see?,season_3,18,117,432
 doofenshmirtz,perry the platypus!,season_3,18,117,433
 doofenshmirtz,alright mr. eviler than thou how did you manage to take over the tri-state area anyway?,season_3,18,117,435
+doofenshmirtz,simple i used an army of big scary robots.,season_3,18,117,436
 doofenshmirtz,wow that is scary. i tried that robot thing once too. i hid the self-destruct button on the bottoms of their feet so nobody could reach them.,season_3,18,118,439
 doofenshmirtz,i think i've said enough. i still don't get it if we're the same person how come you're so much better at being evil than me?,season_3,18,122,444
+doofenshmirtz,true evil is born through pain and loss. you see when i was a small boy back in gimmelshtump i had a toy train.,season_3,18,122,445
+young doofenshmirtz,choo choo?,season_3,18,124,449
 doofenshmirtz,that's... that's it?,season_3,18,126,452
+doofenshmirtz,what do you mean?,season_3,18,126,453
 doofenshmirtz,that's your emotionally scarring backstory? that's your great tragedy? dude i was raised by ocelots literally. disowned by my parents and raised by central american wildcats and you're telling me you lost a toy train? that's it? that's all you got? really? i had to work as a lawn gnome i was forced to wear hand-me-up girl's clothing neither of my parents showed up for my birth!,season_3,18,126,454
+doofenshmirtz,well how did you feel when you lost that toy train?,season_3,18,126,455
 doofenshmirtz,well i never lost that toy train.,season_3,18,126,456
+doofenshmirtz,well maybe if you had you would've done better. since you have neglected to take over your tri-state area i think i'll go over there and give it a shot myself.,season_3,18,126,457
 doofenshmirtz,great we can be a team!,season_3,18,126,458
 doofenshmirtz,wait was that sarcasm?,season_3,18,126,460
 doofenshmirtz,yeah right there i'm pretty sure that's my voice when i'm being sarcastic.,season_3,18,126,462
@@ -12991,38 +13033,74 @@ baljeet,would you like to trade two sartre for a nietzsche?,season_3,18,132,485
 buford,alright. ,season_3,18,132,486
 baljeet,sucker.,season_3,18,132,487
 phineas,well this should be our street but it sure looks different.,season_3,18,134,490
+lawrence,boys what are you doing here? you'd better get inside before the doofbot catches you. i'm off to the factory. see you next week!,season_3,18,135,493
 phineas,wow well i guess we'd better get inside. uh you might want to... uh i mean these guys might not know that you're not really a... you know...,season_3,18,136,495
 phineas,that was weird. let's find the other us.,season_3,18,138,499
 phineas,hey guys!,season_3,18,140,503
 phineas,no no it's not like that we're you guys from another dimension.,season_3,18,140,505
+phineas,a different dimension? is that allowed?,season_3,18,140,506
 phineas,apparently.,season_3,18,140,507
 phineas,uh phineas he's not your perry he came with us.,season_3,18,140,509
 phineas,five counting perry.,season_3,18,141,514
 phineas,boy your candace is much less curious about you're up to.,season_3,18,141,516
+phineas,what do you mean?,season_3,18,141,517
 phineas,well it seems like our candace has spent her entire summer focused on what we're doing.,season_3,18,141,518
+phineas,summer? i think that was outlawed a long time ago.,season_3,18,141,519
 phineas,you guys don't have summer? well that's-that's terrible.,season_3,18,141,520
+phineas,summer... it sounds dangerous yet oddly compelling. what is it?,season_3,18,141,521
 phineas,what is summer? man where do i begin?,season_3,18,141,522
+phineas,wow summer sounds like a blast!,season_3,18,143,551
 phineas,that's just the tip of the iceberg! like this summer for instance; we built a roller coaster we became one-hit wonders we traveled through time...,season_3,18,143,552
+doofenshmirtz,this is a message for other dimension perry the platypus if you turn yourself in i promise not to hurt your little friends. if you don't all bets are off.,season_3,18,144,555
 phineas,,season_3,18,145,557
 phineas,you know i used to think you couldn't spell platypus without us. ,season_3,18,151,573
 ferb,well you can but it would just be platyp. ,season_3,18,151,574
 phineas,well i guess if you guys can't help us fix the remote we could check with isabella.,season_3,18,151,575
+phineas,who's isabella?,season_3,18,151,576
 phineas,the girl who lives across the street.,season_3,18,151,577
+phineas,mom says that talking to neighbors can be dangerous.,season_3,18,151,578
 phineas,well it's time you meet her come on you'll like her.,season_3,18,151,580
+phineas,what about the normbots?,season_3,18,151,581
 phineas,relax we've been avoiding them all day if you're really careful you can... okay we got to be more careful than that.,season_3,18,152,583
 phineas,uh....,season_3,18,152,585
+buford,i can't stand these things!,season_3,18,153,588
 phineas,hey it's buford!,season_3,18,153,589
+buford,do i know you guys?,season_3,18,153,590
 phineas,we're candace's brothers we're going to isabella's.,season_3,18,153,591
+phineas,are you part of the resistance?,season_3,18,153,592
+buford,i used to be in the resistance but i got so good at it that i started resisting them.,season_3,18,153,593
 doofenshmirtz,behold the other-dimensionator! well actually this is the other other-dimensionator the other-dimensionator is back in the other dimension. awww...,season_3,18,155,596
+doofenshmirtz,that's it?,season_3,18,155,597
 doofenshmirtz,well now that i think about it those two boys made some modifications to my design which may have allowed to you know to work.,season_3,18,155,598
+doofenshmirtz,great now i need those two boys?,season_3,18,155,599
 doofenshmirtz,jinx you owe me two sodas!,season_3,18,156,602
+buford,isabella's house is right over...,season_3,18,158,606
 phineas,isabella?,season_3,18,159,609
+isabella,do i know you?,season_3,18,159,610
+buford,hey isabella!,season_3,18,159,611
+isabella,ugh him i know. buford what do you want? i thought you were resisting us?,season_3,18,159,612
+buford,i was helping candace's brothers cross the street.,season_3,18,159,613
+isabella,candace has two sets of twin brothers?,season_3,18,159,614
 phineas,uh no he and i are from another dimension we're trying to get back.,season_3,18,159,615
+isabella,alright girls release them.,season_3,18,159,616
+isabella,why would you want to come to this dimension anyway?,season_3,18,160,618
 phineas,well we didn't mean to come here and now we can't go back unless we fix this device. ,season_3,18,160,619
+isabella,well we may have someone who can help you. dr. baljeet!,season_3,18,160,620
 phineas,baljeet!,season_3,18,161,622
 phineas,well do you think you can get enough power to open the portal backwards so we can get home?,season_3,18,162,627
+baljeet,well we should probably ask our leader...,season_3,18,162,628
+phineas,candace you're the leader of the resistance?,season_3,18,163,632
 phineas,we're just trying to get home.,season_3,18,163,634
+candace,well what's stopping you?,season_3,18,163,635
 phineas,right now? quantum physics.,season_3,18,163,636
+candace,baljeet?,season_3,18,163,637
+baljeet,we need to generate 8 million gigawatts for inter-dimensional travel.,season_3,18,163,638
+candace,then we've got work to do isabella start redirecting the power.,season_3,18,163,639
+isabella,aye aye!,season_3,18,163,640
+candace,gretchen monitor the doofen channel. make sure we're not raising any alarms.,season_3,18,163,641
+gretchen,i'm on it.,season_3,18,163,642
+candace,buford keep resisting.,season_3,18,163,643
+buford,no!,season_3,18,163,644
 candace,oh great and powerful mysterious force. i know you are just trying to protect my brothers but i am just trying to protect them too from their dangerous inventions. show yourself so that i may reason with you! maybe we should build a shrine to it.,season_3,18,165,649
 stacy,candace that's ridic... ,season_3,18,165,650
 both,ah! it's the mysterious force! ,season_3,18,165,651
@@ -13031,23 +13109,38 @@ stacy,what do we do now?,season_3,18,170,658
 candace,i don't know i can't believe it actually worked.,season_3,18,170,659
 phineas,well thanks everyone. hey where's per... oh that's right.,season_3,18,172,662
 phineas,we've got to save him!,season_3,18,172,666
+candace,oh no too risky. you two have to get back to your dimension.,season_3,18,172,667
 phineas,we're not going anywhere without our platypus!,season_3,18,172,668
+buford,i thought you said he was just using you as a cover?,season_3,18,172,669
 phineas,i know what i said i was hurt. but even if it was all an act he's still a part of this family and we're not leaving without him.,season_3,18,172,670
+baljeet,i may never be able to open this again.,season_3,18,172,671
 phineas,it doesn't matter we're going back for him.,season_3,18,172,672
+candace,well then you're on your own.,season_3,18,172,673
 phineas,fine just tell us where doofenshmirtz keeps his prisoners.,season_3,18,172,674
+phineas,we have to help them!,season_3,18,172,675
+candace,no we don't.,season_3,18,172,676
+phineas,yes we do remember how we felt when our perry disappeared?,season_3,18,172,677
+candace,oh criminy i must be crazy. alright we can get there through the tunnels.,season_3,18,173,679
+phineas,yes!,season_3,18,173,680
+candace,let's suit up people!,season_3,18,173,681
 candace,you know what stacy? i'm tired of the mysterious force pushing me around. i'm gonna show it who's boss! ,season_3,18,175,684
 stacy,candace!,season_3,18,175,685
+baljeet,i will try to keep it open for as long as possible but the window is very unstable even the slightest disturbance could cause it to collapse.,season_3,18,177,688
 phineas,hi candace.,season_3,18,178,691
 candace,you guys are so... wait why are there four of you?,season_3,18,178,692
 phineas,oh these guys are from this dimen...,season_3,18,178,693
 candace,are we inside the mysterious force?,season_3,18,178,694
 phineas,i'm not sure i understand the quest...,season_3,18,178,695
 candace,and why is isabella suddenly fashionable?,season_3,18,178,696
+isabella,what do you mean suddenly?,season_3,18,178,697
 candace,seriously where are we?,season_3,18,178,698
 phineas,candace i'm sure you have a million questions but right now we have to save perry from being turned into a cyborg.,season_3,18,178,699
 candace,what?,season_3,18,178,700
 phineas,we'll explain on the way.,season_3,18,178,701
+isabella,so how do i dress in your dimension?,season_3,18,178,702
 candace,hey is that me? i look good!,season_3,18,178,703
+candace,oh no you two stay here.,season_3,18,179,705
+phineas,but we want to help.,season_3,18,179,706
 candace,wait so in this dimension perry is a secret agent?,season_3,18,181,710
 phineas,no in this dimension he's a cyborg.,season_3,18,181,711
 candace,so where is he an agent?,season_3,18,181,712
@@ -13055,35 +13148,92 @@ phineas,that would be in our dimension but we're not in our dimension right now.
 candace,okay i'm having trouble processing this.,season_3,18,181,714
 phineas,now i wish i hadn't thrown away that pamphlet.,season_3,18,181,715
 candace,and why are we in mine cars?,season_3,18,181,716
+isabella,this will take us as far as the underground entrance to his headquarters.,season_3,18,181,717
+buford,i'm just gonna get some nachos.,season_3,18,181,721
 candace,so if there's another me and another them then there must also be another jeremy johnson here right?,season_3,18,182,723
+candace,huh? oh yeah johnson jeremy leads a three-man strike team on the north side. good soldier.,season_3,18,182,724
 candace,good soldier? that's all you think of him? don't you think he's dreamy or cool or even cute? tell me at least you think he's cute!,season_3,18,182,725
+candace,cute doesn't win the war kid.,season_3,18,182,726
 candace,oh... well i guess but what do you guys do around here for you know fun?,season_3,18,182,727
+candace,look candace is it? no offense but fun isn't really on my agenda. you know since doofenshmirtz took over the tri-state area even though i was a little girl i've been focused on one thing and one thing only he's going down down down...,season_3,18,182,728
 candace,down i know but what about bff's or slumber parties or busting your little brothers?,season_3,18,182,729
+candace,busting my brothers? i've spent every day of my life trying to protect my little brothers. i had to grow up pretty quick to make sure they didn't have to.,season_3,18,182,730
 candace,gee you make growing up sound like it's a bad thing.,season_3,18,182,731
+candace,it is what it is i'll do whatever i have to do to protect the ones i love.,season_3,18,182,732
+phineas,aww thanks sis!,season_3,18,183,734
+candace,what are you guys doing here?,season_3,18,183,735
+phineas,we want to help.,season_3,18,183,736
+isabella,sir we're nearing the target.,season_3,18,183,737
+phineas,we're not gonna help them?,season_3,18,184,741
+candace,no we're going to get you two home where it's safe.,season_3,18,184,742
+phineas,but we want to...,season_3,18,184,743
+candace,look this isn't our fight it's theirs and you two shouldn't have gotten involved!,season_3,18,184,744
+buford,i don't remember it being so dark down here.,season_3,18,186,748
+candace,dark?,season_3,18,186,749
 doofenshmirtz,that's because it's a trap!,season_3,18,187,751
+doofenshmirtz,i think they get that.,season_3,18,188,754
 phineas,perry! we uh well... well we uh came to rescue you! yeah we could've thought this out more.,season_3,18,188,755
 major monogram,i told you not between 3:30 and 4:00!,season_3,18,189,758
+doofenshmirtz,they're getting away!,season_3,18,190,760
+candace,i knew this was a bad idea. okay everyone in the cars!,season_3,18,191,762
+isabella,yes sir!,season_3,18,191,764
+phineas,but we never had any training!,season_3,18,194,770
 phineas,uh can you do that?,season_3,18,195,774
 candace,apparently...,season_3,18,195,775
+buford,i am so in love with her right now.,season_3,18,196,777
+isabella,what?,season_3,18,196,778
+buford,nothing!,season_3,18,196,779
+isabella,it's all the way in sir!,season_3,18,196,781
+isabella,can we make those turns at this speed?,season_3,18,197,784
+buford,whoa whoa whoa!,season_3,18,198,787
+candace,there it is. we should be okay if we can just hold off these...,season_3,18,199,789
+phineas,can we do that?,season_3,18,200,791
+candace,no keep your head down.,season_3,18,200,792
 phineas,no no no...!,season_3,18,202,795
+isabella,we're slowing down sir!,season_3,18,202,796
+candace,keep it on the floor.,season_3,18,202,797
+candace,everyone to the front car. we're going to have to cut loose these cars...,season_3,18,202,799
+isabella,the motor's overheating!,season_3,18,203,801
+candace,sorry guys you're on your own.,season_3,18,204,803
+phineas,what are you doing?,season_3,18,205,805
+candace,my job protecting you two.,season_3,18,205,806
+phineas,we have to go back and help them!,season_3,18,205,807
+candace,that's not our fight.,season_3,18,205,808
+phineas,but we could've made it. we could've all made it!,season_3,18,205,809
+candace,or we could've all been captured and i couldn't let that happen. these are the tough choices people someone has to be the adult here. you guys are safe and that's what matters.,season_3,18,205,810
+phineas,but-but-but...,season_3,18,205,811
+candace,end of discussion.,season_3,18,205,812
+buford,man i had my heart set on those nachos.,season_3,18,206,814
 stacy,uh mysterious force. i feel a little awkward talking to you because i didn't believe in you at first. because lets face it it's crazy but then i saw you eat my friend so i've made a little shrine here. it's...it's nice there's a banana and uh oh mr. miggins! so i hope this makes up for the disbelief thing. are we uh are we good?,season_3,18,208,817
+doofenshmirtz,now you have no choice but to fix my machine!,season_3,18,210,820
 phineas,no.,season_3,18,210,821
+doofenshmirtz,that's not one of your choices. fix my machine!,season_3,18,210,822
 phineas,no.,season_3,18,210,823
 candace,can uh can i say something? so i think i'm up to date on the whole perry-agent thing. strangely that's the most normal thing that's happened this afternoon... but who exactly is this guy?,season_3,18,210,824
+doofenshmirtz,fix it!,season_3,18,210,825
 phineas,no.,season_3,18,210,826
+doofenshmirtz,look i would make myself do it but apparently he's an idiot.,season_3,18,210,827
 doofenshmirtz,hey!,season_3,18,210,828
+doofenshmirtz,fix the machine!,season_3,18,210,829
 phineas,no.,season_3,18,210,830
 phineas,no.,season_3,18,210,833
+doofenshmirtz,really? when i was your age i did anything a puppet told me to do!,season_3,18,210,834
 phineas,how old do you think we are?,season_3,18,210,835
+doofenshmirtz,i don't know one two? it's hard to tell with the one eye. anyway i don't know why you're being so uncooperative. all i'm asking you to do is make my machine work so i can invade and conquer your world and enslave your loved ones.,season_3,18,210,836
 phineas,see that's just it. why would we do something that would lead to our own self-destruction?,season_3,18,210,837
 doofenshmirtz,self-destruction? self-destruct... wait wait! i remember now! they took out my self-destruct button! it's working! it's working! it is functioning properly!,season_3,18,211,839
 doofenshmirtz,jinx you owe me three sodas!,season_3,18,211,842
+doofenshmirtz,okay doom for him too.,season_3,18,211,843
 doofenshmirtz,what? but but i'm you!,season_3,18,211,844
 doofenshmirtz,wow if i had a nickel for every time i was doomed by a puppet i'd have two nickels which isn't a lot but it's weird that it happened twice right?,season_3,18,211,846
+doofenshmirtz,welcome doomed guests. come on. keep trudging. doom is that away!,season_3,18,213,849
 candace,i would say so far adulthood gets a three.,season_3,18,214,851
 doofenshmirtz,you know this may be as good as it gets. ,season_3,18,214,852
+doofenshmirtz,and now for my all-time favorite game...,season_3,18,214,853
 doofenshmirtz,wait wait hold the phone. i can be useful. what if you need a kidney? or a stand-in for boring functions you have to attend or another kidney?,season_3,18,215,856
+doofenshmirtz,doom!,season_3,18,215,857
 doofenshmirtz,aw pooh.,season_3,18,215,858
+doofenshmirtz,cranky cranky cranky. oh i love the crank!,season_3,18,216,860
 phineas,i'll be honest ferb. i'm having a hard time putting a positive spin on this. blah blah blah two-car garage etcetera etcetera.,season_3,18,217,862
 doofenshmirtz,yeah well welcome to my life! ,season_3,18,217,863
 ferb,whoa déjà vu-ish.,season_3,18,217,864
@@ -13092,18 +13242,23 @@ phineas,cool! ah! look out!,season_3,18,219,868
 doofenshmirtz,ow! is this the plan? please tell me this isn't the plan!,season_3,18,220,870
 doofenshmirtz,ow! can you get a little more lift on this thing? i think i just bruised a kidney.,season_3,18,222,874
 all,yay! awww.,season_3,18,223,877
+doofenshmirtz,ha ha! yes! go goozim!,season_3,18,224,879
+doofenshmirtz,already?,season_3,18,225,882
 phineas,okay i see where you're going with this. ,season_3,18,226,884
 candace,i officially prefer our dimension.,season_3,18,226,885
 doofenshmirtz,uh this may not be the best time to tell you but i actually flunked jungle gym in grade school. i just couldn't get the hang of all that climbing and...,season_3,18,227,887
 doofenshmirtz,oh great you caught it! quick unlock me!,season_3,18,228,889
 candace,are you even paying attention?,season_3,18,228,890
 doofenshmirtz,oh that's right. uh it can wait later.,season_3,18,229,892
+doofenshmirtz,more guards!,season_3,18,230,894
 phineas,yay other dimension candace!,season_3,18,233,900
+candace,phineas catch!,season_3,18,233,901
 phineas,the remote!,season_3,18,234,903
 candace,what? no don't let go!,season_3,18,236,907
 phineas,perry trust me!,season_3,18,236,908
 candace,two words: la-va! ,season_3,18,236,909
 phineas,trust me!,season_3,18,236,910
+doofenshmirtz,they opened another portal! get after them!,season_3,18,240,915
 doofenshmirtz,thank you perry the platypus.,season_3,18,243,920
 phineas,the portal! ,season_3,18,244,924
 phineas,alright follow me. we're going around clockwise!,season_3,18,248,933
@@ -13128,6 +13283,16 @@ doofenshmirtz,heinz doofenshmirtz your neighbor for like 12 years.,season_3,18,2
 doofenshmirtz,i live in the penthouse. i wear lab coats a lot. speak with the accent i am currently speaking to you with.,season_3,18,271,1019
 doofenshmirtz,yes exactly!,season_3,18,271,1021
 doofenshmirtz,no no no wait... aww!,season_3,18,271,1023
+jeremy,i'm jeremy johnson. i'm here to rescue you.,season_3,18,274,1028
+candace,johnson jeremy?,season_3,18,274,1029
+phineas,we figured out a way to bypass the entire security grid it was cool!,season_3,18,275,1032
+candace,what? you brought my little brothers? are you out of your mind soldier?,season_3,18,275,1033
+jeremy,i didn't know they were your brothers but i should've known. they're smart and courageous just like you.,season_3,18,275,1034
+candace,you think i'm smart and courageous?,season_3,18,275,1035
+jeremy,well yeah. uh sir.,season_3,18,275,1036
+candace,uh good work soldier.,season_3,18,275,1037
+jeremy,we should probably get out of here while we can.,season_3,18,275,1038
+phineas,and we're proud of you too... sir.,season_3,18,275,1043
 stacy,oh mysterious force. you can see i'm really trying here. please bring back candace!,season_3,18,277,1047
 candace,oh hi stacy.,season_3,18,277,1048
 stacy,and i also want a car!,season_3,18,278,1050
@@ -13154,6 +13319,7 @@ phineas,yeah musical accompaniment!,season_3,18,300,1101
 isabella,yes!,season_3,18,303,1128
 phineas,we gotta do something about that portal!,season_3,18,306,1137
 phineas,ferb we're going to try and stop the portal!,season_3,18,307,1139
+doofenshmirtz,what? oh!,season_3,18,310,1151
 candace,i was wrong stacy about everything. i'm not a grown-up. i can't control mysterious forces. i can't even get my mom to see what my brothers are doing! ,season_3,18,314,1157
 stacy,candace where are you going?,season_3,18,314,1158
 candace,i'm gonna bust my brothers to my mom! and i'm gonna fail!,season_3,18,314,1159
@@ -13167,6 +13333,7 @@ linda,i'm not leaving now. the girl is about to forgive the guy for the clichéd
 lawrence,whoa this 3-d is amazing!,season_3,18,318,1173
 isabella,ferb we'll handle things down here! go help phineas!,season_3,18,319,1175
 phineas,oh so that dish must be what's controlling the robots! maybe i don't need to close the portal if i can just take out that... oh yeah!,season_3,18,322,1180
+doofenshmirtz,you know something kid you've been a thorn in my side all day long...,season_3,18,326,1186
 isabella,it's weird that perry's a secret agent huh?,season_3,18,330,1195
 buford,yeah but it was obvious in retrospect.,season_3,18,330,1196
 baljeet,has anyone seen my pants?,season_3,18,331,1198
@@ -13178,16 +13345,27 @@ candace,great! come on come on come on!,season_3,18,334,1206
 phineas,ferb bro! i just hit the best home run ever!,season_3,18,336,1209
 doofenshmirtz,hey!,season_3,18,339,1216
 doofenshmirtz,i got a little something just for you...,season_3,18,340,1219
+doofenshmirtz,choo-choo!,season_3,18,341,1222
 doofenshmirtz,yeah it's mine. see i told you i never lost it. it was in a box in my pantry labeled vhs tapes. go figure. anyway you can have it.,season_3,18,341,1223
 doofenshmirtz,eh it's the least i can do.,season_3,18,342,1226
+doofenshmirtz,you know i don't even know what i was thinking with the whole evil robots thing. actually when i look around i-i'm really embarrassed. here let me clean this up.,season_3,18,342,1227
 doofenshmirtz,oh you.,season_3,18,342,1229
+doofenshmirtz,yeah here we go.,season_3,18,342,1230
 candace,come on come on. hurry! ,season_3,18,345,1234
 linda,do i even need to say there's nothing there anymore?,season_3,18,345,1235
 candace,mom you can say it all you want! you can go back to your movie now.,season_3,18,345,1236
+doofenshmirtz,yeah you know we're totally cool now i'm just going to go back to my home and live out the rest of my days with my choo-choo. okay then ciao!,season_3,18,347,1239
+major monogram,book him ladies.,season_3,18,348,1242
+doofenshmirtz,you know my crimes against humanity had just completely slipped my mind.,season_3,18,348,1243
 candace,hey did you guys just see that? i totally saved danville!,season_3,18,350,1246
+candace,good job soldier.,season_3,18,350,1247
 candace,so what will you do now?,season_3,18,350,1248
+candace,wow i haven't thought of anything but busting doofenshmirtz for years. i don't know.,season_3,18,350,1249
 candace,well i know what interests i'd pursue. ,season_3,18,350,1250
+jeremy,hey here you all are.,season_3,18,350,1251
+candace,i'll take that under consideration. and what about you candace?,season_3,18,350,1252
 candace,you know after all of this i'm going to give myself a little more time to be young. it's not such a bad place to be.,season_3,18,350,1253
+phineas,hey i just wanted to say thanks for teaching us all about summer. you know opening our horizons and teaching ferb classical guitar.,season_3,18,350,1255
 phineas,uh-oh.,season_3,18,352,1258
 phineas,sorry he's mostly made of metal now.,season_3,18,353,1261
 phineas,i'm glad we could help.,season_3,18,353,1263
@@ -18760,6 +18938,7 @@ isabella,what did you say?,season_4,12,49,186
 phineas,i said we're having iced tea! you want some honey?,season_4,12,49,187
 isabella,oh um heh-heh sure!,season_4,12,49,188
 gretchen,so we all need to be...,season_4,13,1,1
+gretchen,...prepared. you'll want to find a safe place and establish a defensive perimeter.,season_4,13,2,3
 baljeet,like in the basement?,season_4,13,2,4
 gretchen,no! you never go in the basement!,season_4,13,2,5
 candace,what is going on here?,season_4,13,2,6
@@ -18900,18 +19079,28 @@ phineas,i wonder if oil-based paint is combustible...as a rocket fuel.,season_4,
 phineas,oh that reminds me we might need helmets!,season_4,14,18,224
 doofenshmirtz,okay little miss osbourne ,season_4,14,20,240
 doofenshmirtz,wait. was that perry the platypus? great. they're probably letting him host the show.,season_4,14,22,244
+phineas,summer... it sounds dangerous yet oddly compelling. what is it?,season_4,14,25,251
 phineas,what is summer? man where do i begin?,season_4,14,25,252
 major monogram,pleasure to meet you young lady.,season_4,14,27,285
+doofenshmirtz,do i know you?,season_4,14,29,297
 doofenshmirtz,yeah i'm you from another dimension.,season_4,14,29,298
+doofenshmirtz,well that would explain the handsomeness.,season_4,14,29,299
 doofenshmirtz,right back atcha big guy.,season_4,14,29,300
+doofenshmirtz,does that mean you and i are exactly alike?,season_4,14,29,301
 doofenshmirtz,i suppose so.,season_4,14,29,302
 doofenshmirtz,blech no that's gross!,season_4,14,29,304
+doofenshmirtz,me too!,season_4,14,29,307
 doofenshmirtz,but not the vending machine thing. that's gonna happen.,season_4,14,29,314
+doofenshmirtz,it's in this pouch.,season_4,14,29,322
 doofenshmirtz,ouch!,season_4,14,29,323
 doofenshmirtz,you know i can't help but notice that your scar goes over your eyepatch.,season_4,14,29,324
+doofenshmirtz,yeah...,season_4,14,29,325
 doofenshmirtz,...nothing...,season_4,14,29,326
 doofenshmirtz,no no i meant lorenzo.,season_4,14,29,329
+doofenshmirtz,oh that's right.,season_4,14,29,330
+doofenshmirtz,what's that are we doing a tv show together?,season_4,14,29,345
 doofenshmirtz,oh no. it just sort of sounded like that. well i mean we could. we should!,season_4,14,29,346
+doofenshmirtz,hmm maybe we're not so much alike,season_4,14,29,347
 doofenshmirtz,that can be your catchphrase! you're the grumpy one. eh?,season_4,14,29,348
 major monogram,make that three!,season_4,14,30,358
 carl,sir i just wanted to check to see if you— maia mitchell!!! i'm your biggest fan! love your voice and your work!,season_4,14,30,359
@@ -20439,6 +20628,7 @@ buford,don't do much? the big bite on my butt begs to differ!,season_4,28,6,71
 carl,perhaps sweary would want to try my new steam-powered jetpack. it's very heavy and full of boiling hot water.,season_4,28,7,74
 carl,it's not cooler sir. it's just got more frames.,season_4,28,7,76
 phineas,okay we're all set ferb start her up! ,season_4,28,9,87
+phineas,shuck the corn. milk the cows.,season_4,28,10,89
 isabella,mend the fences.,season_4,28,10,90
 phineas,lastly plow and seed the field.,season_4,28,10,91
 candace,i feel like i've been carrying these buckets all summer. i'll never get to the fair in time to meet jeremy. ,season_4,28,10,92
@@ -20758,6 +20948,7 @@ major monogram,defenestrate!,season_4,32,30,134
 man,hup! sorry to interrupt i'll come back when you're done.,season_4,32,31,136
 major monogram,we are so gonna lose our deposit.,season_4,32,32,138
 linda,here's your stuff from the attic candace.,season_4,32,33,140
+linda,i don't know why you couldn't find it.,season_4,32,34,142
 candace,i don't know mom. it must've been behind something. heh heh.,season_4,32,34,143
 linda,candace you didn't go up there at all did you?,season_4,32,34,144
 candace,oh mom i just couldn't go up there. it's all gross and webby.,season_4,32,34,145
@@ -20863,6 +21054,7 @@ roger,well then just wear warmer clothes.,season_4,32,72,320
 roger,people people. look look look take-take it easy. i'm still your mayor!,season_4,32,73,323
 roger,thank you good samaritan platypus! although i'm not sure this is much of an improvement. i mean i really don't know how to get down from here...and it's getting noticeably colder up here. oh! it's a good thing i wore my sweater.,season_4,32,74,325
 baljeet,well according to the conditions in the upper atmosphere...,season_4,32,75,327
+baljeet,...we are in for a moderate cold front that shows absolutely no signs of subsiding.,season_4,32,76,329
 phineas,that's odd. i can't remember a single danville summer where i needed to wear anything more than a t-shirt.,season_4,32,76,330
 isabella,striped.,season_4,32,76,331
 phineas,and shorts.,season_4,32,76,332
@@ -20891,6 +21083,7 @@ monty,i've got to warn carl.,season_4,32,81,369
 rodney,okay tell me you didn't hear that!,season_4,32,81,370
 rodney,so our building has a sudden urge to warn carl?,season_4,32,81,372
 stacy,come on candace!,season_4,32,82,374
+stacy,it's the last thing on the list.,season_4,32,83,376
 candace,i know i know i know i know okay here i go! ugh! i can't!,season_4,32,83,377
 stacy,i don't understand what the big deal is.,season_4,32,83,378
 candace,it's just the legs and the hair and all those eyes! and why do they have so many eyes?!,season_4,32,83,379
@@ -21112,6 +21305,7 @@ phineas,okay ferb let's get this early morning party started.,season_4,33,1,1
 lawrence,roger that papa bear.,season_4,33,7,9
 lawrence,oh yes modern technology's wonderful. i know it's not quite the quite the same as...,season_4,33,9,13
 phineas,hang on ferb.,season_4,33,13,18
+lawrence,...the real thing but i suppose it's better than nothing.,season_4,33,15,21
 phineas,whoa ferb i know what else we're gonna do today. surprise! happy father's day dad. and you too grandpa reg.,season_4,33,17,24
 lawrence,oh how lovely. breakfast in den.,season_4,33,17,26
 phineas,ferb and i pulled out all the stops.,season_4,33,17,27
@@ -21785,6 +21979,7 @@ candace,uh well how can i get this off? buford is like the eighth person to orde
 phineas,well we didn't do it. but we'll be glad to undo it. side project gang.,season_4,39,29,137
 doofenshmirtz,no! no! not the -inator! i totally need that!,season_4,39,31,140
 doofenshmirtz,who's this nincompoop? oh right. curse you perry the platypus...,season_4,39,32,142
+doofenshmirtz,...and-and the football player the gorilla and lulu jones and blanca dishon and director dipthong. everybody! curse you all!,season_4,39,32,144
 phineas,okay. we have everything we need for a holographic field disrupter. we'll build it and you'll be totally... back to normal!,season_4,39,33,146
 candace,cool. thanks guys. bust you later.,season_4,39,33,147
 buford,i guess my pizza orders aren't goin' in. won't someone think of the buford?!?!,season_4,39,33,148
@@ -22099,6 +22294,7 @@ isabella,mmmmmwah!,season_4,40,175,874
 gretchen,way to ruin the moment porkins!,season_4,40,175,897
 phineas,it's a mystery ferb. a riddle. whispering a secret to an enigma while driving down a lost highway in an escher painting. how do they get the toothpaste into the tube?,season_4,41,1,1
 ferb,sometimes if you're lost it's best to just go...,season_4,41,1,2
+ferb,... along for the ride.,season_4,41,7,9
 candace,new paisley sideburn brothers album don't make me bust.,season_4,41,14,19
 phineas,and how do they get the red and blue toothpaste to swirl?,season_4,41,18,26
 phineas,whoa. hmm. apparently it just fell out of the sky.,season_4,41,19,28
@@ -22180,6 +22376,8 @@ phineas,y'know that was pretty intense ferb. we could've blown up the planet or 
 phineas,maybe there's some pie left.,season_4,41,55,221
 phineas,good point. not to mention our dad isn't a polar bear.,season_4,41,56,225
 candace,c'mon c'mon...,season_4,42,1,1
+candace,...stace! cover me! we need to find...,season_4,42,2,3
+candace,...the bridge across the dumbledown river before that stupid gopher!,season_4,42,3,5
 stacy,i got your back girl! coin!,season_4,42,3,6
 candace,i'm on it!,season_4,42,3,7
 stacy,c'mon! c'mon! nice! you did it candace!,season_4,42,3,8
@@ -23452,6 +23650,7 @@ carl,what do you mean sir?,season_4,48,19,100
 major monogram,well what exactly is he doing?,season_4,48,20,102
 carl,obviously something's itching him.,season_4,48,20,103
 major monogram,and agent w too.,season_4,48,20,104
+major monogram,it's really taking a toll on our brand new facility.,season_4,48,21,106
 carl,i don't understand all the itching. i handed out the new flea collars this morning.,season_4,48,22,108
 major monogram,then something's not right because owca is infested with fleas. carl activate emergency flea protocol 993-alpha.,season_4,48,22,109
 carl,agent c activate emergency flea protocol 993-alpha.,season_4,48,22,110

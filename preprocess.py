@@ -53,7 +53,7 @@ for season in seasons:
                     # print(line.split(': ', maxsplit=1))
                     if len(linesplit) > 1:
                         speaker, line_contents = linesplit
-                        # speaker = ''.join(regexSimplifyName.split(speaker)).replace('  ',' ').strip()
+                        speaker = ''.join(regexSimplifyName.split(speaker)).replace('  ',' ').strip()
                         data_dict[season][episode_num][line_count] = {'line':line_contents, 'speaker':speaker, 
                                                                   'episode':episode_num, 'scene_count':scene_count, 
                                                                   'line_count':line_count, 'season':season}
