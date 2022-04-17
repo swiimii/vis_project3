@@ -15,15 +15,15 @@ episodes_for_importance = 5
 
 characterEpisodeData = {"perry":[]}
 
+regexSimplifyLine = re.compile('\(.*\)|\[.*\]')
+regexSimplifyName = re.compile('(old|future|bad)')
+
 for season in seasons:
     data_dict[season] = OrderedDict()
     season_dir_items = listdir(join(transcript_dir, season))
 
     # List of episode nums in this season, sorted by number value
     episode_nums = sorted([int(f.replace("episode","").replace(".txt","")) for f in [f for f in season_dir_items]])
-
-    regexSimplifyLine = re.compile('\(.*\)|\[.*\]')
-    regexSimplifyName = re.compile('(old|future|bad)')
 
     for episode_num in episode_nums:
         data_dict[season][episode_num] = OrderedDict()
