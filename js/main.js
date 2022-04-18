@@ -23,7 +23,7 @@ d3.csv('data/transcript_data.csv')
     wordmap = new Wordmap({
           'parentElement': '#wordmap',
           'containerHeight': 500,
-          'containerWidth': 700
+          'containerWidth': 900
         }, data);
     
     const timeline = new Timeline({

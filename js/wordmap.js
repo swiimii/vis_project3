@@ -4,7 +4,7 @@ class Wordmap {
 	      parentElement: _config.parentElement,
 	      containerWidth: _config.containerWidth || 500,
 	      containerHeight: _config.containerHeight || 140,
-	      margin: { top: 10, bottom: 10, right: 10, left: 10 }
+	      margin: { top: 5, bottom: 5, right: 5, left: 100}
 	    }
 
 	    this.data = _data;
@@ -43,6 +43,42 @@ class Wordmap {
     		.attr("text-anchor", "middle")
 	  		.attr('transform', `translate(${vis.config.margin.left},${vis.config.margin.top})`);
 
+	  	vis.svg.append("rect")
+	  		.attr('x', 2)
+        	.attr('y', 135)
+        	.attr('height', 200)
+        	.attr('width', 90)
+        	.attr('fill', 'white')
+        	.attr('stroke', "black")
+        	.attr('stroke-width', 1);
+
+	  	vis.svg.append("text")
+	  		.attr("x", 7)
+			.attr("y", 150) 
+			.attr("text-anchor", "left")
+			.style("alignment-baseline", "middle")
+	  		.text("Occurrences:");
+
+	  	vis.svg.selectAll("legdots")
+	    	.data([0.99, 4.99, 9.99, 24.99, 49.99, 99.99, 149.99, 199.99, 299.99, 499.99, 500])
+	    	.enter()
+	    	.append("circle")
+	    		.attr("cx", 12)
+	    		.attr("cy", function(d,i){return 170 + i*15})
+	    		.attr("r", 5)
+	    		.style("fill", function(d){ return vis.colors(d)});
+
+		vis.svg.selectAll("leglabels")
+			.data(["1", "2-5", "6-10", "11-25", "26-50", "51-100", "101-150", "151-200", "200-300", "300-500", "501+"])
+			.enter()
+			.append("text")
+			    .attr("x", 22)
+			    .attr("y", function(d,i){return 170 + i*15}) 
+			    .style("fill", "black")
+			    .text(function(d){ return d})
+			    .attr("text-anchor", "left")
+			    .style("alignment-baseline", "middle")
+
 	  	vis.renderVis(vis.data); 
 	}
 	renderVis(data = null) {
@@ -57,8 +93,6 @@ class Wordmap {
 			vis.text += d.line + ' ';
 		});
 
-		console.log(vis.text);
-
 		vis.text = vis.text
     		.trim()
     		.split(/[\s.]+/g)
@@ -68,18 +102,16 @@ class Wordmap {
 		    .map((w) => w.substring(0, 30))
 		    .map((w) => w.toLowerCase())
 		    .filter((w) => w && !vis.stopwords.has(w));
-		console.log(vis.text)
 
 		vis.wordData = d3.rollups(vis.text, (group) => group.length, (w) => w)
 		    .sort(([, a], [, b]) => d3.descending(a, b))
 		    .slice(0, 250)
 		    .map(([text, value]) => ({text, value }));
+
 		console.log(vis.wordData);
 
 		vis.fontScale = 70 / Math.sqrt(vis.wordData[0].value);
-		console.log(vis.fontScale);
 
-	
 		vis.w_cloud = d3.layout.cloud()
 		    .size([vis.width, vis.height])
 		    .words(vis.wordData.map((d) => Object.create(d)))
@@ -90,10 +122,21 @@ class Wordmap {
 		    .on("word", ({ size, x, y, rotate, text }) => {
 		      vis.chart
 		        .append("text")
+		        .attr("class", "words")
 		        .attr("font-size", size)
 		        .attr("transform", `translate(${x},${y}) rotate(${rotate})`)
 		        .style("fill", function(d) { return vis.colors(Math.pow(size/vis.fontScale,2)); })
-		        .text(text);
+		        .text(text)
+		        .on("click", handleClick);
+
+		        function handleClick(d, i) {
+		          var e = d3.select(this);
+		          let selectedWord = `${e.text()}`;
+		          let newData = null;
+		          newData = vis.filtered_data.filter((element) => element.line.indexOf(selectedWord) !=-1? true: false);
+		          console.log(selectedWord);
+		          UpdateAllCharts(newData);
+		        }
 		    });
 		vis.w_cloud.start();
 	}
