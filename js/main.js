@@ -101,14 +101,24 @@ d3.select("#selectEpisode").on("change", function(d) {
   })
 
 function get_episode_dist(data) {
-  episode_lengths = d3.rollup(data, v => v.length, d => d.season, d => d.episode);
-  console.log(episode_lengths);
+  // episode_lengths = d3.rollup(data, v => v.length, d => d.season, d => d.episode);
+  // console.log(episode_lengths);
 
-  data.forEach(d=> 
-    d.line_perc = Math.round(d.line_count/episode_lengths.get(d.season).get(d.episode)*100)
-  );
+  grouped_data = d3.group(data, d => d.season, d => d.episode);
+  grouped_data.forEach(d=>
+    console.log(d)
+    );
+  console.log(grouped_data);
+  
+
+  data.forEach(d=> {
+    episode_data = grouped_data.get(d.season).get(d.episode);
+    d.line_perc = Math.round(d.line_count/episode_data[episode_data.length - 1].line_count*100);
+  });
+  //episode_scenes = d3.rollup(data, v => v.length, d => d.season, d => d.episode);
+
   console.log(data);
-  let main_chars = ["phineas", "candace", "doofenshmirtz"];
+  let main_chars = ["ferb", "candace", "phineas", "doofenshmirtz"];
   data = data.filter(d => main_chars.includes(d.speaker));
   console.log(data);
 
@@ -126,6 +136,11 @@ function get_episode_dist(data) {
     )
   );
   console.log(arr);
+
+  //arr.forEach(d=> {
+  arr.sort((a, b) => (a.perc > b.perc) ? 1 : -1)
+  //});
+  
   // data = d3.group(data, d => d.speaker);
   // console.log(data);
   // main_chars.forEach(d=> 

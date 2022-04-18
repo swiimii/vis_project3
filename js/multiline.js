@@ -74,12 +74,12 @@ class MultiLine {
 	    .attr("x", 10)
 	    .text("AQI")
     
-    vis.keys = ["phineas", "candace", "doofenshmirtz"];
+    vis.keys = ["ferb", "candace", "phineas", "doofenshmirtz"];
     vis.color = d3.scaleOrdinal()
     	.domain(vis.keys);
 
 
-		vis.color.range(["#cfe1f2","#4b97c9","#08306b"])
+		vis.color.range(["#8dd3c7","#bebada","#fb8072","#80b1d3"])
     	
 
 
