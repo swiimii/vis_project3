@@ -36,10 +36,9 @@ d3.csv('data/transcript_data.csv')
     linechart = new MultiLine({
       'parentElement': '#line',
       'containerHeight': 200,
-      'containerWidth': 950
+      'containerWidth': 1650
     }, data);
 
-    //get_episode_dist(data);
   })
   .catch(error => console.error(error));
     
@@ -50,6 +49,7 @@ function UpdateAllCharts(data = null) {
   }
   UpdateBarCharts(data);
   wordmap.updateVis(data);
+  linechart.updateVis(data);
 
 }
 
@@ -101,50 +101,41 @@ d3.select("#selectEpisode").on("change", function(d) {
   })
 
 function get_episode_dist(data) {
-  // episode_lengths = d3.rollup(data, v => v.length, d => d.season, d => d.episode);
-  // console.log(episode_lengths);
-
-  grouped_data = d3.group(data, d => d.season, d => d.episode);
-  grouped_data.forEach(d=>
-    console.log(d)
-    );
-  console.log(grouped_data);
-  
+  let grouped_data = d3.group(data, d => d.season, d => d.episode);
 
   data.forEach(d=> {
     episode_data = grouped_data.get(d.season).get(d.episode);
     d.line_perc = Math.round(d.line_count/episode_data[episode_data.length - 1].line_count*100);
   });
-  //episode_scenes = d3.rollup(data, v => v.length, d => d.season, d => d.episode);
-
-  console.log(data);
-  let main_chars = ["ferb", "candace", "phineas", "doofenshmirtz"];
-  data = data.filter(d => main_chars.includes(d.speaker));
-  console.log(data);
-
-  //console.log(d3.max(...data.map(item => item.line_count)));
-
-  episode_dists_by_char = d3.rollup(data, v => v.length, d => d.speaker, d => d.line_perc);
-  console.log(episode_dists_by_char);
   
+  let main_chars = ["doofenshmirtz", "stacy", "phineas", "baljeet", "candace", "ferb", "linda", "buford", "isabella", "major monogram", "jeremy"];
+  data = data.filter(d => main_chars.includes(d.speaker));
 
-  // console.log(episode_dists_by_char.get(main_chars[0]).keys());
+  // SHOWS JUST NUMBER OF LINES FOR EACH CHARACTER
+
+  let episode_dists_by_char = d3.rollup(data, v => v.length, d => d.speaker, d => d.line_perc);
   let arr = [];
   main_chars.forEach(d=> 
     Array.from(episode_dists_by_char.get(d).keys()).forEach(p => 
       arr.push({speaker: d, perc: p, value: episode_dists_by_char.get(d).get(p)})
     )
   );
-  console.log(arr);
+  //arr.sort((a, b) => (a.perc > b.perc) ? 1 : -1)
 
-  //arr.forEach(d=> {
-  arr.sort((a, b) => (a.perc > b.perc) ? 1 : -1)
-  //});
-  
-  // data = d3.group(data, d => d.speaker);
-  // console.log(data);
+  // CONVERTS NUMBER OF LINES TO PERCENTAGE OF CHARACTER LINES
+
+  // total_char_lines = d3.rollup(data, v => v.length, d => d.speaker);
+  // console.log(total_char_lines);
+
+  // episode_dists_by_char = d3.rollup(data, v => v.length, d => d.speaker, d => d.line_perc);
+  // console.log(episode_dists_by_char);
+  // let arr = [];
   // main_chars.forEach(d=> 
-
+  //   Array.from(episode_dists_by_char.get(d).keys()).forEach(p => 
+  //     arr.push({speaker: d, perc: p, value: episode_dists_by_char.get(d).get(p)/total_char_lines.get(d)})
+  //   )
   // );
+  // console.log(arr);
+  // arr.sort((a, b) => (a.perc > b.perc) ? 1 : -1)
   return(arr);
 }
