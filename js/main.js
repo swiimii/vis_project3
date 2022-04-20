@@ -41,6 +41,13 @@ d3.csv('data/transcript_data.csv')
 		'containerWidth': 1200
 	}, data);
 	
+
+    linechart = new MultiLine({
+      'parentElement': '#line',
+      'containerHeight': 200,
+      'containerWidth': 1650
+    }, data);
+
   })
   .catch(error => console.error(error));
     
@@ -52,6 +59,7 @@ function UpdateAllCharts(data = null) {
   UpdateBarCharts(data);
   //chord.UpdateVis();
   wordmap.updateVis(data);
+  linechart.updateVis(data);
 
 }
 
@@ -134,3 +142,42 @@ d3.select("#selectEpisode").on("change", function(d) {
     
   })
 
+function get_episode_dist(data) {
+  let grouped_data = d3.group(data, d => d.season, d => d.episode);
+
+  data.forEach(d=> {
+    episode_data = grouped_data.get(d.season).get(d.episode);
+    d.line_perc = Math.round(d.line_count/episode_data[episode_data.length - 1].line_count*100);
+  });
+  
+  let main_chars = ["doofenshmirtz", "stacy", "phineas", "baljeet", "candace", "ferb", "linda", "buford", "isabella", "major monogram", "jeremy"];
+  data = data.filter(d => main_chars.includes(d.speaker));
+
+  // SHOWS JUST NUMBER OF LINES FOR EACH CHARACTER
+
+  let episode_dists_by_char = d3.rollup(data, v => v.length, d => d.speaker, d => d.line_perc);
+  let arr = [];
+  main_chars.forEach(d=> 
+    Array.from(episode_dists_by_char.get(d).keys()).forEach(p => 
+      arr.push({speaker: d, perc: p, value: episode_dists_by_char.get(d).get(p)})
+    )
+  );
+  //arr.sort((a, b) => (a.perc > b.perc) ? 1 : -1)
+
+  // CONVERTS NUMBER OF LINES TO PERCENTAGE OF CHARACTER LINES
+
+  // total_char_lines = d3.rollup(data, v => v.length, d => d.speaker);
+  // console.log(total_char_lines);
+
+  // episode_dists_by_char = d3.rollup(data, v => v.length, d => d.speaker, d => d.line_perc);
+  // console.log(episode_dists_by_char);
+  // let arr = [];
+  // main_chars.forEach(d=> 
+  //   Array.from(episode_dists_by_char.get(d).keys()).forEach(p => 
+  //     arr.push({speaker: d, perc: p, value: episode_dists_by_char.get(d).get(p)/total_char_lines.get(d)})
+  //   )
+  // );
+  // console.log(arr);
+  // arr.sort((a, b) => (a.perc > b.perc) ? 1 : -1)
+  return(arr);
+}
