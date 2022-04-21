@@ -4,7 +4,7 @@ class MultiLine {
       parentElement: _config.parentElement,
       containerWidth: _config.containerWidth || 500,
       containerHeight: _config.containerHeight || 140,
-      margin: { top: 30, bottom: 35, right: 200, left: 35 }
+      margin: { top: 30, bottom: 35, right: 200, left: 70 }
       //tooltipPadding: _config.tooltipPadding || 15
     }
     this.data = _data;
@@ -47,12 +47,15 @@ class MultiLine {
     vis.chart.append('g')
     	.attr("class", "myY")
 
+
+    let font_size = 12;
+    // Title
    	vis.svg.append("text")
     	.attr("x", vis.config.containerWidth/2 - 30)
     	.attr("y", 15)
     	.attr("font-weight", "bold")
     	.attr("text-anchor", "middle")
-    	.style("font-size", "20px")
+    	.style("font-size", font_size + 4)
     	.text("When Main Characters Speak in Episodes")
 
 
@@ -60,19 +63,22 @@ class MultiLine {
 	vis.svg.append("text")
 	    .attr("text-anchor", "middle")
 	    .attr("font-weight", "bold")
-	    .style("font-size", "16px")
+	    .style("font-size", font_size)
 	    .attr("x", vis.width/2 + vis.config.margin.left)
 	    .attr("y", vis.height+vis.config.margin.top+30)
 	    .text("Percent into Episode (0 = Beginning, 100 = End)");
 
 	// Y axis label:
-	vis.svg.append("text")
-	    .attr("text-anchor", "start")
+	vis.svg.append("g")
+      .attr('transform', 'translate(' + (font_size) + ', ' + (vis.config.margin.top/2 + vis.config.containerHeight/2) + ')')
+      .append("text")
+      .attr('transform', 'rotate(-90)')
+	    .attr("text-anchor", "middle")
 	    .attr("font-weight", "bold")
-	    .style("font-size", "16px")
+	    .style("font-size", font_size)
 	    .attr("y", 20)
 	    .attr("x", 10)
-      .text("Number of Lines in Selected Episodes")
+      .text("Number of Lines")
 	    //.text("Percent of Character's Lines")
     
     vis.keys = ["doofenshmirtz", "stacy", "phineas", "baljeet", "candace", "ferb", "linda", "buford", "isabella", "major monogram", "jeremy"];

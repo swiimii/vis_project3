@@ -162,7 +162,7 @@ class BarChart {
         .attr('width', vis.xScale.bandwidth())
         .attr('fill', d => vis.barColor(d))
         .on('mouseover', (event,d) => {
-          console.log(d);
+          // console.log(d);
           d3.select('#tooltip')
               .style('display', 'block')
               .style('left', (event.pageX + 10) + 'px')   
