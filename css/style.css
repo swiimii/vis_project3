@@ -38,11 +38,6 @@
   color: #888;
 }
 
-#chord {
-	width: 500px;
-	height: 500px;
-}
-
 .wrapper {
   display:flex;
   align-items: center;

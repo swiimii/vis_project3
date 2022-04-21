@@ -7,8 +7,8 @@ class BarChart {
       yLabel: _config.yLabel || "Missing Axis Label",
       parentElement: _config.parentElement,
       containerWidth: _config.containerWidth || 450,
-      containerHeight: _config.containerHeight || 300,
-      margin: { top: 20, bottom: 100, right: 50, left: 70 }
+      containerHeight: _config.containerHeight || 250,
+      margin: { top: 20, bottom: 75, right: 50, left: 70 }
     }
 
     this.data = _data;
@@ -89,7 +89,7 @@ class BarChart {
       // These can be replaced by style if necessary
       //.attr('font-family', 'sans-serif')
       .attr("font-weight", "bold")
-      .attr('font-size', font_size)
+      .attr('font-size', font_size + 4)
 
     vis.updateVis();
   }
