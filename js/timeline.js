@@ -7,8 +7,8 @@ class Timeline {
       yLabel: _config.yLabel || "Missing Axis Label",
       parentElement: _config.parentElement,
       containerWidth: _config.containerWidth || 450,
-      containerHeight: _config.containerHeight || 300,
-      margin: { top: 20, bottom: 100, right: 50, left: 70 }
+      containerHeight: _config.containerHeight || 250,
+      margin: { top: 20, bottom: 75, right: 50, left: 70 }
     }
 
     this.data = _data;
@@ -80,6 +80,17 @@ class Timeline {
       .attr("font-weight", "bold")
       .attr('font-size', font_size)
 
+    // X Axis label
+    vis.svg.append("g")
+      .attr('transform', 'translate(' + (vis.config.containerWidth/2) + ', ' + (vis.config.margin.bottom + vis.config.containerHeight/2) + ')')
+      .append('text')
+      .attr('text-anchor', 'middle')
+      .text("Season + Episode")
+      // These can be replaced by style if necessary
+      //.attr('font-family', 'sans-serif')
+      .attr("font-weight", "bold")
+      .attr('font-size', font_size)
+
     // Title label
     vis.svg.append("g")
       .attr('transform', 'translate(' + (vis.config.margin.left + vis.width/2) + ', ' + (font_size + 2) + ')')
@@ -89,7 +100,7 @@ class Timeline {
       // These can be replaced by style if necessary
       //.attr('font-family', 'sans-serif')
       .attr("font-weight", "bold")
-      .attr('font-size', font_size)
+      .attr('font-size', font_size + 4)
     
     vis.getColumnName = d => "Season " + d.season.substring(7) + ", Episode " + d.episode;
 
@@ -97,6 +108,15 @@ class Timeline {
       let season = d.split(',')[0].substring(7);
       return vis.colors[season];
     };
+
+    // Update the axes
+    vis.xAxisG.call(vis.xAxis)
+    .selectAll('text')
+      .style('text-anchor','end')
+      .style("font", "0px times")
+      .attr("dx", "-.8em")
+      .attr("dy", ".15em")
+      .attr("transform", "rotate(-40)");;
 
     vis.data_selections = new Map();
 
@@ -193,13 +213,6 @@ class Timeline {
           UpdateAllCharts(newData);
         });
 
-    // // Update the axes
-    // vis.xAxisG.call(vis.xAxis)
-    //   .selectAll('text')
-    //     .style('text-anchor','end')
-    //     .attr("dx", "-.8em")
-    //     .attr("dy", ".15em")
-    //     .attr("transform", "rotate(-40)");;
     vis.yAxisG.transition().duration(1000).call(vis.yAxis);
 
   }

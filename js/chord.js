@@ -3,10 +3,11 @@ class Chord {
 	
 	constructor(_config, _data) {
     this.config = {
+	  title: _config.title || "Interaction Diagram",
       parentElement: _config.parentElement,
-      containerWidth: _config.containerWidth || 500,
+      containerWidth: _config.containerWidth || 450,
       containerHeight: _config.containerHeight || 500,
-      margin: { top: 10, bottom: 10, right: 10, left: 10 }
+      margin: { top: 30, bottom: 10, right: 10, left: 10 }
     }
 
     this.data = _data;
@@ -56,7 +57,7 @@ class Chord {
 		vis.svg
 		  .datum(vis.charArc)
 		  .append("g")
-			.attr("transform", "translate(220,220)")
+			.attr("transform", `translate(${vis.config.containerWidth/2},${ vis.config.containerHeight/2})`)
 		  .selectAll("path")
 		  .data(d => d)
 		  .join("path")
@@ -75,7 +76,19 @@ class Chord {
 		   .on('mouseleave', () => {
 			  d3.select('#tooltip').style('display', 'none');
 			});
-		
+
+		let font_size = 12;
+		// Title label
+		vis.svg.append("g")
+			.attr('transform', 'translate(' + (vis.config.containerWidth/2 - vis.config.margin.right) + ', ' + (font_size + 4) + ')')
+			.append('text')
+			.attr('text-anchor', 'middle')
+			.text(vis.config.title)
+			// These can be replaced by style if necessary
+			//.attr('font-family', 'sans-serif')
+			.attr("font-weight", "bold")
+			.attr('font-size', font_size + 4)
+	
 	}
 	
 	

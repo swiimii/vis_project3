@@ -18,7 +18,7 @@ d3.csv('data/transcript_data.csv')
     const myBar1 = new BarChart({
       parentElement: 'bar1',
       title: 'Line Counts Per Speaker',
-      yLabel: 'Number of Lines (rows of data)',
+      yLabel: 'Number of Lines',
     }, data, "speaker", 12, true);
 
     wordmap = new Wordmap({
@@ -30,15 +30,15 @@ d3.csv('data/transcript_data.csv')
     const timeline = new Timeline({
       parentElement: 'timeline',
       title: 'Lines Per Episode',
-      yLabel: 'Number of Lines (rows of data)',
+      yLabel: 'Number of Lines',
       containerWidth: 1200,
     }, data, "speaker", 300);
 	
 	GetImportantCharacters(data);
 	chord = new Chord({
 		'parentElement': '#chord',
-		'containerHeight': 900,
-		'containerWidth': 1200
+		'containerHeight': 500,
+		'containerWidth': 450
 	}, data);
 	
 
@@ -124,7 +124,7 @@ d3.select("#selectSeason").on("change", function(d) {
       UpdateEpisodeList(Array.from(d3.group(seasonData, d => d.episode).keys()));
     }
     
-	GetImportantCharacters(seasonData);
+	// GetImportantCharacters(seasonData);
 	//chord.UpdateVis();
     UpdateAllCharts(seasonData);
   })

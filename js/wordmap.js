@@ -1,10 +1,11 @@
 class Wordmap {
 	constructor(_config, _data) {
 	    this.config = {
+		  title: _config.title || "Word Occurrance Chart",
 	      parentElement: _config.parentElement,
 	      containerWidth: _config.containerWidth || 500,
 	      containerHeight: _config.containerHeight || 140,
-	      margin: { top: 5, bottom: 5, right: 5, left: 100}
+	      margin: { top: 30, bottom: 5, right: 5, left: 100}
 	    }
 
 	    this.data = _data;
@@ -78,6 +79,18 @@ class Wordmap {
 			    .text(function(d){ return d})
 			    .attr("text-anchor", "left")
 			    .style("alignment-baseline", "middle")
+		
+		let font_size = 12;
+		// Title label
+		vis.svg.append("g")
+			.attr('transform', 'translate(' + (vis.width/2) + ', ' + (font_size + 4) + ')')
+			.append('text')
+			.attr('text-anchor', 'middle')
+			.text(vis.config.title)
+			// These can be replaced by style if necessary
+			//.attr('font-family', 'sans-serif')
+			.attr("font-weight", "bold")
+			.attr('font-size', font_size + 4)
 
 	  	vis.renderVis(vis.data); 
 	}
