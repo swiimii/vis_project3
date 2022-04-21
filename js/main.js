@@ -1,6 +1,7 @@
 let seasonData;
 let episodeData;
 let allData;
+let impChar = [];
 
 d3.csv('data/transcript_data.csv')
   .then(data => {
@@ -32,6 +33,14 @@ d3.csv('data/transcript_data.csv')
       yLabel: 'Number of Lines (rows of data)',
       containerWidth: 1200,
     }, data, "speaker", 300);
+	
+	GetImportantCharacters(data);
+	chord = new Chord({
+		'parentElement': '#chord',
+		'containerHeight': 900,
+		'containerWidth': 1200
+	}, data);
+	
 
     linechart = new MultiLine({
       'parentElement': '#line',
@@ -42,15 +51,46 @@ d3.csv('data/transcript_data.csv')
   })
   .catch(error => console.error(error));
     
-  
+ 
 function UpdateAllCharts(data = null) {
   if (data == null) {
     data = allData
   }
   UpdateBarCharts(data);
+  //chord.UpdateVis();
   wordmap.updateVis(data);
   linechart.updateVis(data);
 
+}
+
+function GetImportantCharacters(charData)
+{
+	impChar = [];
+	count = 0;
+	charGroup = d3.group(charData, d => d.speaker);
+	seasonData = [];
+	season = [];
+	for(var m of charGroup)
+	{
+		count = 0;
+		seasonStuff = d3.group(m[1], d => d.season);
+		for (i of ["season_1", "season_2", "season_3", "season_4"])
+		{
+			season = seasonStuff.get(i);
+			if(season != undefined)
+			{
+				count = count + Array.from(d3.group(season, d => d.episode).keys()).length;
+			}
+		}
+		if (count > 5)
+		{
+			impChar.push(m[1][0].speaker);
+		}
+		
+	}
+	
+	console.log(impChar);
+	
 }
 
 function UpdateEpisodeList(episodes) {
@@ -84,6 +124,8 @@ d3.select("#selectSeason").on("change", function(d) {
       UpdateEpisodeList(Array.from(d3.group(seasonData, d => d.episode).keys()));
     }
     
+	GetImportantCharacters(seasonData);
+	//chord.UpdateVis();
     UpdateAllCharts(seasonData);
   })
 
