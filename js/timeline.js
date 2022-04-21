@@ -98,6 +98,8 @@ class Timeline {
       return vis.colors[season];
     };
 
+    vis.data_selections = new Map();
+
     vis.updateVis();
   }
 
@@ -118,8 +120,6 @@ class Timeline {
 
     vis.data_map = d3.group(vis.filtered_data, vis.getColumnName );
 
-    vis.data_selections = new Map();
-
     // If a number set to a month name
     (Array.from(vis.data_map.keys()).sort((a,b) => a.season - b.season != 0 ? a.season - b.season : a.episode - b.episode)).forEach((key) => {
       if (key != null) {
@@ -130,6 +130,12 @@ class Timeline {
         vis.data_selections.set(visualKey, vis.data_map.get(key).length);
       }
     });
+
+    (Array.from(vis.data_selections.keys()).forEach((key) => {
+      if (!(vis.data_map.has(key))) {
+        vis.data_selections.set(key, 0);
+      }
+    }));
 
     if (vis.sortByValue) {
       vis.data_selections = new Map([...vis.data_selections].sort((a,b) => b[1] - a[1]));
