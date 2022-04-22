@@ -21,7 +21,7 @@ class Chord {
 		let vis = this;
 		vis.charMatrixFull = [];
 		
-		const colors = [ "#440154ff", "#31668dff", "#37b578ff", "#fde725ff"]
+		vis.colors = ["#8dd3c7","#bebada","#fb8072","#80b1d3","#fdb462","#b3de69","#fccde5","#d9d9d9","#bc80bd","#ccebc5","#ffed6f"];
 		
 		vis.width = vis.config.containerWidth - vis.config.margin.left - vis.config.margin.right;
 	  	vis.height = vis.config.containerHeight - vis.config.margin.top - vis.config.margin.bottom;
@@ -64,7 +64,7 @@ class Chord {
 			.attr("d", d3.ribbon()
 			  .radius(200)
 			)
-			.style("fill", d => colors[d.source.index % 4])
+			.style("fill", d => vis.colors[d.source.index % 11])
 			.style("stroke", "black")
 		  .on('mouseover', (event, d) => { console.log(d);
 							d3.select('#tooltip')
