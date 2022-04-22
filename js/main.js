@@ -24,7 +24,7 @@ d3.csv('data/transcript_data.csv')
     wordmap = new Wordmap({
           'parentElement': '#wordmap',
           'containerHeight': 500,
-          'containerWidth': 900
+          'containerWidth': 1200
         }, data);
     
     const timeline = new Timeline({
@@ -157,11 +157,13 @@ function get_episode_dist(data) {
 
   let episode_dists_by_char = d3.rollup(data, v => v.length, d => d.speaker, d => d.line_perc);
   let arr = [];
-  main_chars.forEach(d=> 
-    Array.from(episode_dists_by_char.get(d).keys()).forEach(p => 
-      arr.push({speaker: d, perc: p, value: episode_dists_by_char.get(d).get(p)})
-    )
-  );
+  main_chars.forEach(d=> {
+    if (episode_dists_by_char.has(d)) {
+      Array.from(episode_dists_by_char.get(d).keys()).forEach(p => 
+        arr.push({speaker: d, perc: p, value: episode_dists_by_char.get(d).get(p)})
+      )
+    }
+  });
   //arr.sort((a, b) => (a.perc > b.perc) ? 1 : -1)
 
   // CONVERTS NUMBER OF LINES TO PERCENTAGE OF CHARACTER LINES
