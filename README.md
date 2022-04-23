@@ -1,4 +1,4 @@
-# vis_project3
+# Vis Project 3
 
 Team Name: Team Sam Is Kinda Cool
 
