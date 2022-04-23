@@ -94,6 +94,7 @@ class MultiLine {
           .attr("cx", vis.config.margin.left + vis.width + 20)
           .attr("cy", function(d,i){return 10 + i*18})
           .attr("r", 5)
+          .style("opacity", 1)
           .style("fill", function(d){ return vis.color(d)});
 
     vis.svg.selectAll("leglabels")
@@ -102,6 +103,7 @@ class MultiLine {
         .append("text")
             .attr("x", vis.config.margin.left + vis.width + 35)
             .attr("y", function(d,i){return 10 + i*18}) // 100 is where the first dot appears. 25 is the distance between dots
+            .style("opacity", 1)
             .style("fill", "black")
             .text(function(d){ return d})
             .attr("text-anchor", "left")
@@ -112,9 +114,12 @@ class MultiLine {
           console.log(d);
           if (vis.inactive.includes(d)) {
             vis.inactive = vis.inactive.filter((element) => element != d);
+            //console.log(this);
+            //d3.select(this).style("opacity", 1);
           }
           else{
             vis.inactive.push(d);
+            //d3.select(this).style("opacity", 0.3);
           }
           vis.renderVis();
         });
@@ -194,6 +199,16 @@ class MultiLine {
             .y(d => vis.yScale(d.value))
             (d[1])
         });
+
+    vis.svg.selectAll(".leg-btn")
+      .style("opacity", function(d) {
+        if (vis.inactive.includes(d)){
+          return(0.2);
+        }
+        else{
+          return(1);
+        }
+      })
   }
 
   	
